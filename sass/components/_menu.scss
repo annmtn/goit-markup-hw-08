@@ -1,0 +1,44 @@
+.menu {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 32px 0;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu__icon {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+  stroke: currentColor;
+}
+
+/* Подсвечивание текущей страницы */
+.menu__item {
+  position: relative;
+}
+
+.menu__link--current {
+  color: var(--accent-color);
+}
+
+.menu__link--current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.5px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
