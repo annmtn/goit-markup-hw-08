@@ -6,13 +6,27 @@
 }
 
 .footer__box {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    text-align: start;
+  }
 }
 
 .footer__block {
-  max-width: 270px;
-  margin-right: auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    margin-right: auto;
+  }
 }
 
 .footer__logo {
