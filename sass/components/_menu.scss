@@ -1,6 +1,10 @@
 .menu {
-  display: inline-flex;
-  align-items: center;
+  display: none;
+
+  @media screen and(min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+  }
 }
 
 .menu__item:not(:last-child) {
