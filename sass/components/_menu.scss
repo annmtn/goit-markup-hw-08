@@ -24,6 +24,20 @@
   fill: var(--secondary-text-color);
   margin-right: 10px;
   stroke: currentColor;
+
+  &--mail {
+    @media screen and (max-width: 1199.98px) {
+      width: 14px;
+      height: 10px;
+    }
+  }
+
+  &--phone {
+    @media screen and (max-width: 1199.98px) {
+      width: 10px;
+      height: 14px;
+    }
+  }
 }
 
 /* Подсвечивание текущей страницы */
